@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    tools:context=".ui.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorAccent"
+            android:elevation="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="10dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtToolbar"
+                style="@style/PrimaryText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="عنوان صفحه" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="3dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_settings" />
+
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/frame_container"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:elevation="1dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/navigation_graph"
+            tools:layout="@layout/fragment_request_nursing_services" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bgBottomNavigation"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemBackground="@color/bgBottomNavigation"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@color/bng_tab_item_foreground"
+        app:itemTextAppearanceActive="@style/miniText"
+        app:itemTextAppearanceInactive="@style/miniText"
+        app:itemTextColor="@color/bng_tab_item_foreground"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

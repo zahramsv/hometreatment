@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RequestNursingServicesOneFragment">
+
+    <RelativeLayout
+        android:id="@+id/paperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/cardBackground"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/PrimaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hint_check_request_services" />
+
+
+                <RadioButton
+                    style="@style/SecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hint_injections"
+                    android:textColor="@color/textColor" />
+
+                <RadioButton
+                    style="@style/SecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/hint_bandage_types"
+                    android:textColor="@color/textColor" />
+
+
+                <RadioButton
+                    style="@style/SecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/hint_diabetic_bed_sores"
+                    android:textColor="@color/textColor" />
+
+
+                <RadioButton
+                    style="@style/SecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/hint_bladder_and_stomach_catheterization"
+                    android:textColor="@color/textColor" />
+
+                <RadioButton
+                    style="@style/SecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/hint_blood_sampling"
+                    android:textColor="@color/textColor" />
+
+
+                <RadioButton
+                    style="@style/SecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/hint_stitch"
+                    android:textColor="@color/textColor" />
+
+
+                <RadioButton
+                    style="@style/SecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/hint_icu_care"
+                    android:textColor="@color/textColor" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:onClick="openStepOne"
+                    style="@style/PrimaryText"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/shape_button_accent"
+                    android:gravity="center"
+                    android:text="@string/next_step"
+                    android:textColor="@color/white"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/binder_clip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

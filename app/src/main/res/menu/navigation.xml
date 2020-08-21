@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/ic_shop"
+        android:title="@string/hint_store" />
+
+    <item
+        android:id="@+id/navigation_payment_manager"
+        android:icon="@drawable/ic_payment_manager"
+        android:title="@string/hint_payment_manager" />
+
+
+
+    <item
+        android:id="@+id/navigation_track_request"
+        android:icon="@drawable/ic_track_request"
+        android:title="@string/hint_track_request" />
+
+    <item
+        android:id="@+id/navigation_service_request"
+        android:icon="@drawable/ic_services"
+        android:title="@string/hint_services_request" />
+
+
+</menu>

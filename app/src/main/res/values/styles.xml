@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="PrimaryText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/primary_text_size</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">right</item>
+        <item name="android:fontFamily">@font/iransans_light</item>
+    </style>
+
+
+    <style name="miniText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/mini_text_size</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">right</item>
+        <item name="android:fontFamily">@font/iransans_light</item>
+    </style>
+
+    <style name="SecondaryText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/textSecondaryColor</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:fontFamily">@font/iransans_light</item>
+    </style>
+
+
+    <style name="TextInputEditText" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/shape_stork_dark_edit_text</item>
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:layout_height">@dimen/normal_view_height</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:fontFamily">@font/iransans_light</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+</resources>

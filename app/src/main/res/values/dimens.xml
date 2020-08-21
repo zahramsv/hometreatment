@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="normal_view_height">33dp</dimen>
+
+    <dimen name="header_text_size">15dp</dimen>
+    <dimen name="primary_text_size">14dp</dimen>
+    <dimen name="secondary_text_size">11dp</dimen>
+    <dimen name="mini_text_size">9sp</dimen>
+    <dimen name="border_group_view">15dp</dimen>
+
+    <dimen name="card_view_image_width">100dp</dimen>
+    <dimen name="card_view_image_height">100dp</dimen>
+</resources>

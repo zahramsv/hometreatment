@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashFragment2">
+
+    <fragment
+        android:id="@+id/paymentManagerFragment"
+        android:name="ir.mohad.hometreatment.ui.PaymentManagerFragment"
+        android:label="fragment_payment_manager"
+        tools:layout="@layout/fragment_payment_manager" />
+    <fragment
+        android:id="@+id/prepaymentFactorFragment"
+        android:name="ir.mohad.hometreatment.ui.PrepaymentFactorFragment"
+        android:label="fragment_prepayment_factor"
+        tools:layout="@layout/fragment_prepayment_factor" />
+    <fragment
+        android:id="@+id/requestNursingServicesOneFragment"
+        android:name="ir.mohad.hometreatment.ui.RequestNursingServicesOneFragment"
+        android:label="fragment_request_nursing_services"
+        tools:layout="@layout/fragment_request_nursing_services" />
+    <fragment
+        android:id="@+id/requestNursingServicesFourFragment"
+        android:name="ir.mohad.hometreatment.ui.RequestNursingServicesFourFragment"
+        android:label="fragment_request_nursing_services_four"
+        tools:layout="@layout/fragment_request_nursing_services_four" />
+    <fragment
+        android:id="@+id/requestNursingServicesThreeFragment"
+        android:name="ir.mohad.hometreatment.ui.RequestNursingServicesThreeFragment"
+        android:label="fragment_request_nursing_services_three"
+        tools:layout="@layout/fragment_request_nursing_services_three" />
+    <fragment
+        android:id="@+id/requestNursingServicesTwoFragment"
+        android:name="ir.mohad.hometreatment.ui.RequestNursingServicesTwoFragment"
+        android:label="fragment_request_nursing_services_two"
+        tools:layout="@layout/fragment_request_nursing_services_two" />
+    <fragment
+        android:id="@+id/serviceRequestFragment"
+        android:name="ir.mohad.hometreatment.ui.ServiceRequestFragment"
+        android:label="fragment_service_request"
+        tools:layout="@layout/fragment_service_request" />
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="ir.mohad.hometreatment.ui.StoreFragment"
+        android:label="fragment_store"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/trackRequestFragment"
+        android:name="ir.mohad.hometreatment.ui.TrackRequestFragment"
+        android:label="fragment_track_request"
+        tools:layout="@layout/fragment_track_request" />
+    <fragment
+        android:id="@+id/splashFragment2"
+        android:name="ir.mohad.hometreatment.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+</navigation>
